@@ -10,6 +10,7 @@
     --dark-blue: #0a1128;
     --blue: #011841; 
     --white: #FEFCFB;
+    --gray: gray; 
 }
 
 * {
@@ -119,6 +120,10 @@ img {
     width: 128px;
 }
 
+.hero button:hover {
+    background-color: var(--blue);
+}
+
 .footer {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -150,18 +155,19 @@ img {
 .social-links {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    gap: 8px;
 }
 
-.social-links a {
-    margin-right: 16px;
+.social-links svg {
+    width: 32px; 
+    height: 32px; 
+    fill: var(--white); 
 }
 
-.social-links img {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+.social-links svg:hover {
+    fill: var(--gray); 
+    cursor: pointer;
 }
 
 .footer-bottom {
