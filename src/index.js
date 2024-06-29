@@ -1,5 +1,8 @@
 import './styles.css';
 import foodImage from '../img/food.jpg';
+import facebookSvg from './facebook.svg';
+import instagramSvg from './instagram.svg';
+import twitterSvg from './twitter.svg';
 
 // const body = document.body;
 
