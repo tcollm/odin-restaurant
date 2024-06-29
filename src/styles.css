@@ -32,20 +32,37 @@ header {
 nav {
     display: flex;
     align-items: center;
-    margin-left: auto;
     gap: 16px;
+    width: 100%;
 }
 
 nav button {
     margin: 0;
     padding: 0;
     margin: 16px;
-    background-color: var(--blue);
+    background-color: var(--dark-blue);
     border: none;
     color: var(--white);
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'abelregular', 'Roboto', sans-serif;
+}
+
+.nav-left {
+    margin-right: auto;
+}
+
+.nav-left button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+nav button:hover {
+    cursor: pointer;
 }
 
 h1 {
