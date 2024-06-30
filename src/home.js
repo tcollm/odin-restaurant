@@ -36,6 +36,7 @@ export default function generateHomePage() {
 
     const heroButton = document.createElement('button');
     heroButton.textContent = 'BOOK A TABLE'; 
+    heroButton.id = 'book'; 
     hero.appendChild(heroButton);
 
 
