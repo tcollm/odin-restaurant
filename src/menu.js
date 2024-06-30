@@ -1,12 +1,7 @@
 import './styles/base.css';
 import './styles/menu.css';
 
-let isPageGenerated = false; 
-
 export default function generateMenuPage() {
-    if(isPageGenerated) {
-        return; 
-    }
 
     const content = document.getElementById('content'); 
     // erase other page content
@@ -15,6 +10,4 @@ export default function generateMenuPage() {
     const div = document.createElement('div');
     div.textContent = 'Menu content';
     content.appendChild(div); 
-
-    isPageGenerated = true; 
 }
