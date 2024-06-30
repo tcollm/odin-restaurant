@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'abelregular';
+    src: url('../fonts/abel-regular-webfont.woff2') format('woff2'),
+         url('../fonts/abel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --dark-blue: #0a1128;
+    --blue: #011841;
+    --white: #FEFCFB;
+    --gray: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--white);
+    font-size: 1.2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: var(--dark-blue);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+nav button {
+    margin: 0;
+    padding: 0;
+    margin: 16px;
+    background-color: var(--dark-blue);
+    border: none;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'abelregular', 'Roboto', sans-serif;
+}
+
+.nav-left {
+    margin-right: auto;
+}
+
+.nav-left button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    color: var(--white);
+}
+
+img {
+    width: auto;
+    height: 80vh;
+    vertical-align: middle;
+}
+
+.social-links svg {
+    width: 32px; 
+    height: 32px; 
+    fill: var(--white); 
+}
+
+.social-links svg:hover {
+    fill: var(--gray); 
+    cursor: pointer;
+}

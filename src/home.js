@@ -1,4 +1,5 @@
-import './styles.css';
+import './styles/base.css';
+import './styles/home.css';
 import foodImage from '../img/food.jpg';
 
 export default function generateHomePage() {
