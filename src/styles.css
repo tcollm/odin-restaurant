@@ -159,6 +159,7 @@ img {
     gap: 8px;
 }
 
+/* change svg styling to img styling */
 .social-links svg {
     width: 32px; 
     height: 32px; 
