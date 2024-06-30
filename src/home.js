@@ -2,7 +2,13 @@ import './styles/base.css';
 import './styles/home.css';
 import foodImage from '../img/food.jpg';
 
+let isPageGenerated = false; 
+
 export default function generateHomePage() {
+    if (isPageGenerated) {
+        return; 
+    }
+
     const content = document.getElementById('content');
 
     // body 
@@ -125,4 +131,6 @@ export default function generateHomePage() {
     const copyright = document.createElement('p');
     copyright.textContent = '\u00A9 2024 Gourmet Bistro. All rights reserved.';
     footerBottom.appendChild(copyright); 
+
+    isPageGenerated = true; 
 }
