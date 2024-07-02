@@ -1,5 +1,6 @@
 import generateHomePage from './home.js';
 import generateMenuPage from './menu.js';
+import generateAboutPage from './about.js';
 
 generateHomePage(); 
 
