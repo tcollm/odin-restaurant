@@ -76,6 +76,9 @@ h1 {
     color: var(--white);
 }
 
+hr {
+    border: 2px solid var(--blue);
+}
 
 .footer {
     background-color: var(--dark-blue);

@@ -1,0 +1,12 @@
+#content {
+    margin: 32px 64px;
+}
+
+h3 {
+    padding-left: 8px;
+}
+
+p {
+    padding: 32px;
+    text-align: center;
+}
