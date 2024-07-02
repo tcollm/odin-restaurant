@@ -1,13 +1,14 @@
 import generateHomePage from './home.js';
 import generateMenuPage from './menu.js';
 import generateAboutPage from './about.js';
+import generateBookPage from './book.js';
 
 generateHomePage(); 
 
-// let currentPage = 'home'; 
-
 document.addEventListener('click', (event) => {
-    const target = event.target;
+
+    // error listens to all clicks on page, need to make it only 
+    // listen to button clicks 
 
     const content = document.getElementById('content');
     content.innerHTML = ''; 

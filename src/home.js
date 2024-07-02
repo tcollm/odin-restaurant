@@ -39,5 +39,6 @@ export default function generateHomePage() {
     const heroButton = document.createElement('button');
     heroButton.textContent = 'BOOK A TABLE'; 
     heroButton.id = 'book'; 
+    heroButton.classList.add('book'); 
     hero.appendChild(heroButton);
 }
