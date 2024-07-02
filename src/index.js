@@ -9,26 +9,28 @@ document.addEventListener('click', (event) => {
 
     // error listens to all clicks on page, need to make it only 
     // listen to button clicks 
+    if (event.target.tagName === 'BUTTON') {
 
-    const content = document.getElementById('content');
-    content.innerHTML = ''; 
+        const content = document.getElementById('content');
+        content.innerHTML = ''; 
 
-    switch (event.target.id) {
-        case 'home': 
-            generateHomePage(); 
-            break; 
-        case 'menu':
-            generateMenuPage(); 
-            break;
-        case 'about':
-            generateAboutPage(); 
-            break;
-        case 'book':
-            generateBookPage(); 
-            break;
-        default:
-            generate404Page(); 
-            console.log('404 not found'); 
-            break; 
+        switch (event.target.id) {
+            case 'home': 
+                generateHomePage(); 
+                break; 
+            case 'menu':
+                generateMenuPage(); 
+                break;
+            case 'about':
+                generateAboutPage(); 
+                break;
+            case 'book':
+                generateBookPage(); 
+                break;
+            default:
+                generate404Page(); 
+                console.log('404 not found'); 
+                break; 
+        }
     }
 });
