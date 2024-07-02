@@ -2,13 +2,8 @@ import './styles/base.css';
 import './styles/home.css';
 import foodImage from '../img/food.jpg';
 
-let isPageGenerated = false; 
 
 export default function generateHomePage() {
-    if (isPageGenerated) {
-        return; 
-    }
-
     const content = document.getElementById('content');
 
     // body 

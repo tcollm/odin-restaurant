@@ -3,14 +3,12 @@ import './styles/menu.css';
 
 export default function generateMenuPage() {
     const content = document.getElementById('content'); 
-    console.log(content.innerHTML); 
 
-    console.log('generateMenuPage working'); 
+    const header = document.createElement('h3');
+    header.textContent = 'Menu';
+    content.appendChild(header); 
 
-    // erase other page content
-    // add footer to index.html
 
-    // const div = document.createElement('div');
-    // div.textContent = 'Menu content';
-    // content.appendChild(div); 
+    // Menu
+    // Coming soon...
 }
